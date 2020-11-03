@@ -36,69 +36,27 @@ $( document ).ready(function() {
             textButtonOne: 'Deposit',
             textButtonTwo: 'Coming soon',
             textButtonThree: 'Coming soon',
-
-            // mainCaptionOne: 'New era of safety',
-            // mainPBlockOne: 'TBCC VPN is based on Cellframe platform. Instead of other VPN, we implement quantum-safe cryptography that protects all your operation and information. TBCC VPN is completely anonymous due to multiple routing.',
-            // mainCaptionTwo: 'Main advantages',
-            // mainUlBlockLiOne: '• Simple and easy to use interface;',
-            // mainUlBlockLiTwo: '• More secure than centralized VPNs – be sure that all your data and transactions will be safe',
-            // mainUlBlockLiThree: '• TBCC VPN doesn’t collect logs',
-            // mainUlBlockLiFour: '• It has no single point of failure that is why it can’t be blocked;',
-            // mainUlBlockLiFive: '• TBCC VPN users can’t be identified by payments or traffic trace',
-            // mainUlBlockLiSix: '• Fast internet connection.',
-            // mainCaptionThree: 'No more borders',
-            // mainPBlockTwo: 'Get unlimited access to music, social media, videos, apps, and to many internet resources from any place in the world. Forget about geo-blocks and enjoy the Internet without cyber borders.',
-            // textButton: 'start to use',
-            // footerItemOne: 'Contact us',
-            // footerItemTwo: 'follow us',
-            // footerItemThree: 'Return Policy',
-            // footerItemFour: 'Terms of use',
-            // footerItemFive: 'Privacy Policy',
-            // footerItemSix: 'Complete description of services offered',
-            // tokenH1: 'What is VTBC?',
-            // tokenH2: ' VTBC token is the new digital asset that is released by TBCC VPN. It is fully decentralized and can be traded on Binance DEX with pair of BNB. VTBC is available on Binance Chain platform.',
-            // tokenCaptionOne: 'VTBC - new token on blockchain',
-            // tokenUlBlockOne: 'Afordable price',
-            // tokenUlBlockTwo: 'Fixed quantity with 1.000.000 token',
-            // tokenUlBlockThree: 'Works seamlessly with new BEP8 protocol',
-            // tokenUlBlockFour: 'Available for buying on Binance DEX or via TBCC Wallet',
-            // tokenCaptionTwo: 'Usage of VTBC',
-            // tokenPItemOne: 'Pay for your VPN keys to activate the TBCC VPN app',
-            // tokenPItemTwo: 'With VTBC token you can trade on Binance DEX',
-            // tokenPItemThree: 'AirDrop — share your VTBC token via AirDrop',
-            // tokenCaptionThree: 'VTBC Market perfomance',
-            // totalMarketCap: 'Total Market Cap',
-            // priceText: 'Price',
-            // volumeText: '24h Volume',
-            // globalRankText: 'Global Rank (protocol BEP8)',
-            // howH1: 'How to use TBCC VPN?',
-            // howH2: 'To start using TBCC VPN you need to do just 2 steps',
-            // howPBlockOne: 'To begin working with TBCC VPN you have to download the app (currently available for Android only)',
-            // howPBlockTwo: 'To activate VPN app you need to have VPN key.',
-            // howCaptionOne: 'How to get TBCC VPN key?',
-            // howPBlockThree: 'It’s quite simple. You have to download TBCC Wallet mobile app and buy a key with VTBC token.',
-            // howPBlockFour: 'VTBC tokens can be changed on Binance DEX in pair VTBC/BNB or in TBCC Wallet app on your mobile phone.',
-            // key: 'VPN key ',
-            // howPBlockFive: 'Note: you need to have Binance Coin (BNB) on your balance. One key is available for one year.',
-            // aboutH1: 'About TBCC VPN',
-            // aboutH2: 'TBCC VPN is one of the services that is provided to users by TBCC Labs. The mission of TBCC VPN is to provide safe and fast internet connection without any logs, spy or selling data. We want to help our users to forget about cyber borders, without compromising the safety of data. Our priority is to make all your transactions fast and secure.',
-            // globalServers: 'Global servers',
-            // aboutPBlockOne: 'We don’t use servers as ordinary VPN services do. TBCC VPN is totally decentralized. You can be in any place in the world and use our VPN, your location doesn\'t matter.',
-            // aboutCaptionOne: 'Unlike other VPN, TBCC VPN has such distinctive features as:',
-            // aboutUlBlockOne: 'IP Blacklisting',
-            // aboutUlBlockTwo: ' QoS Guarantees',
-            // aboutUlBlockThree: 'No Logging – you have no need to provide your ID to the service;',
-            // aboutUlBlockFour: 'Internal VPN stock',
-            // aboutUlBlockFive: 'Variable encryption',
-            // keyFeatures: 'Key Features',
-            // aboutCaptionTwo: 'Why TBCC VPN is better?',
-            // aboutPBlockTwo: 'TBCC VPN is much safer than other VPNs because it implements original cryptography, unlike other VPNs. The connection of the Internet will be extremely fast – you have no need to worry that you won’t succeed to do an immediate purchase on Binance DEX. Also, TBCC VPN has and easy-to-use interface. We provide you with totally anonymous app, that will never provide information upon your transactions and data.',
-            // aboutH3One: 'Shielded and widened internet surfing',
-            // aboutH3Two: 'Totally anonymous',
-            // aboutH3Three: 'Decentralized',
-            // aboutPBlockThree: 'With TBCC VPN, you are fully protected from tracking and monitoring. You can work in the Internet, watch videos, use any app.',
-            // aboutPBlockFour: 'TBCC VPN protects you from the undesired attention from spy websites and annoying advertisers. No problems with visiting websites – your real IP will never be flagged on the Internet.',
-            // aboutPBlockFive: 'TBCC VPN is based on the decentralized Cellframe blockchain platform. Decentralization allows you to be independent of servers location and your connection is as fast as possible!'
+            textButtonFour: 'Details',
+            textButtonFive: 'Details',
+            textButtonSix: 'Details',
+            mainCaptionOne: 'Track your DeFi portfolio in real time',
+            mainPBlockOne: 'All market changes and opportunites are monitored 24/7 by bots ans other special tools for your convience. See your earnings and redeem your funds and interest in one place online',
+            mainH2Two: '3 steps to start earning on your deposit',
+            mainCaptionTwo: 'Step 1',
+            mainPBlockTwo: 'Choose one or several strategies that fits you best. Create your own portfolio of digital assets that will maximize your income.',
+            mainCaptionThree: 'Step 2',
+            mainPBlockThree: 'Put your assets on a deposit. All your investments will be allocated across DeFi protocols automatically.',
+            mainCaptionFour: 'Step 3',
+            mainPBlockFour: 'You will start earning immediately aftrer you put your assets on the deposit. Monitor the rate, your income, other strategies, to make more investments and to wide you digital portfolio in order to create your personal strategy of earning.',
+            mainCaptionFive: 'We are using leading audited protocols',
+            mainPBlockFive: 'Just choose your best strategy and see how assets are automatically allocated across best DeFi protocols',
+            textButtonSeven: 'Join DAO',
+            mainCaptionSix: 'Ready to get started with Defirium?',
+            formEmail: 'Your email',
+            formButton: 'Subscribe',
+            copyright: '2020 defirium. All rights reserved',
+            terms: 'Terms of use',
+            police: 'Privacy Policy'
         },
         RU: {
             menuItemOne: 'Продукты',
@@ -115,70 +73,31 @@ $( document ).ready(function() {
             hintOne: 'Годовая процентная доходность',
             hintTwo: 'Годовая процентная доходность',
             hintThree: 'Годовая процентная доходность',
-
-            // mainCaptionOne: 'Новая эра безопасности',
-            // mainPBlockOne: 'TBCC VPN создана на платформе Cellframe. В отличии от других сервисов VPN, мы внедрили квантово-безопасное шифрование, которое защит все ваши операции и информацию. TBCC VPN является полностью анонимным приложением из-за множественной маршрутизации.',
-            // mainCaptionTwo: 'Основные достоинства',
-            // mainUlBlockLiOne: '• Простой и легкий в использовании интерфейс;',
-            // mainUlBlockLiTwo: '• Более безопасный, чем централизованные VPN приложения – будьте уверены, что все ваши данные и операции будут в сохранности ',
-            // mainUlBlockLiThree: '• TBCC VPN не собирает лаги',
-            // mainUlBlockLiFour: '• У него нет единой точки отказа, поэтому его нельзя заблокировать',
-            // mainUlBlockLiFive: '• Пользователи TBCC VPN не могут быть идентифицированы за счет платежей или движения трафика',
-            // mainUlBlockLiSix: ' • Быстрое интернет соединение',
-            // mainCaptionThree: 'Больше никаких границ',
-            // mainPBlockTwo: 'Получите неограниченный доступ к музыке, социальным медиа, видео, приложениям и другим интернет ресурсам из любой точки планеты. Забудьте о гео-блоках и наслаждайтесь интернетом без кибер границ',
-            // textButton: 'начать использование',
-            // footerItemOne: 'свяжитесь с нами',
-            // footerItemTwo: 'Следите и подписывайтесь на наши социальные сети',
-            // footerItemThree: 'Политика возврата',
-            // footerItemFour: 'Правила использования',
-            // footerItemFive: 'Политика конфиденциальности',
-            // footerItemSix: 'Полное описание предлагаемых сервисов',
-            // tokenH1: 'Что такое VTBC?',
-            // tokenH2: 'VTBC токен это новый вид цифровых активов, выпущенный сервисом TBCC VPN. Он полностью децентрализован и может торговаться на Binance DEX в паре с BNB. VTBC доступен на платформе Binance Chain.',
-            // tokenCaptionOne: 'VTBC - новый токен в блокчейн',
-            // tokenUlBlockOne: 'Доступная цена',
-            // tokenUlBlockTwo: 'Фиксированное количество в 1.000.000 токенов',
-            // tokenUlBlockThree: 'Работает бесперебойно с новым BEP8 протоколом',
-            // tokenUlBlockFour: 'Доступен для покупки на бирже Binance DEX или через TBCC Wallet',
-            // tokenCaptionTwo: 'Использование VTBC',
-            // tokenPItemOne: 'Оплачивайте VPN ключи для активации приложения TBCC VPN ',
-            // tokenPItemTwo: 'С VTBC token вы можете торговать на бирже Binance DEX',
-            // tokenPItemThree: 'Получайте VTBC token через AirDrop',
-            // tokenCaptionThree: 'Рыночные данные о VTBC',
-            // totalMarketCap: 'Общая рыночная капитализация',
-            // priceText: 'Цена',
-            // volumeText: '24 часовой объем',
-            // globalRankText: 'Мировой рейтинг (среди протокола BEP8)',
-            // howH1: 'Как использовать TBCC VPN?',
-            // howH2: 'Для того, чтобы начать использование TBCC VPN вам необходимо сделать всего 2 шага',
-            // howPBlockOne: 'Для начала работы с приложением TBCC VPN вам нужно установить мобильное приложение (временно доступно только приложение для Android)',
-            // howPBlockTwo: 'Для того, чтобы активировать VPN приложение вам необходимо иметь VPN ключ',
-            // howCaptionOne: 'Как получить ключ для TBCC VPN?',
-            // howPBlockThree: 'Это достаточно просто. Вам необходимо установить мобильное приложение TBCC Wallet и купить ключ при помощи VTBC токенов. Войти в кошелек',
-            // howPBlockFour: 'Токены VTBC можно получить на бирже Binance DEX в паре VTBC/BNB или в приложении TBCC Wallet на вашем мобильном телефоне',
-            // key: 'VPN ключ ',
-            // howPBlockFive: 'Внимание: вам необходимо иметь Binance Coin (BNB) на вашем балансе',
-            // aboutH1: 'О TBCC VPN',
-            // aboutH2: 'TBCC VPN является одним из сервисов, предоставляемых пользователям компанией TBCC Labs. Миссия TBCC VPN - обеспечить безопасное и быстрое подключение к Интернету без каких-либо лагов, шпионажа или продажи данных. Мы хотим помочь нашим пользователям забыть о кибер-границах, не ставя при этом под угрозу безопасность данных. Наш приоритет - сделать все ваши транзакции быстрыми и безопасными.',
-            // globalServers: 'Международные серверы',
-            // aboutPBlockOne: 'Мы не используем серверы, как обычные VPN-сервисы. TBCC VPN полностью децентрализован. Вы можете быть в любой точке мира и использовать наш VPN, ваше местоположение не имеет значения.',
-            // aboutCaptionOne: 'В отличии от других VPN сервисов TBCC VPN имеет следующие отличительные характеристики:',
-            // aboutUlBlockOne: 'IP Blacklisting (черный список IP);',
-            // aboutUlBlockTwo: 'QoS гарантии;',
-            // aboutUlBlockThree: 'Никаких логинов– вам не нужно предоставлять ваши персональные данные для пользования сервисом',
-            // aboutUlBlockFour: 'Внутренний VPN сток',
-            // aboutUlBlockFive: 'Переменное шифрование.',
-            // keyFeatures: 'Ключевые особенности',
-            // aboutCaptionTwo: 'Почему TBCC VPN лучше других?',
-            // aboutPBlockTwo: 'TBCC VPN намного безопаснее, чем другие VPN, потому что мы используем оригинальную криптографию, в отличие от других VPN. Подключение к Интернету будет очень быстрым - вам не нужно беспокоиться о том, что вам не удастся совершить мгновенную покупку на Binance DEX. Кроме того, TBCC VPN имеет простой и легкий в использовании интерфейс. Мы предоставляем вам абсолютно анонимное приложение, которое никогда не предоставит информацию о ваших транзакциях и данных.',
-            // aboutH3One: 'Расширенный интернет-серфинг',
-            // aboutH3Two: 'Полностью анонимный',
-            // aboutH3Three: 'Децентрализованный',
-            // aboutPBlockThree: 'С TBCC VPN вы полностью защищены от отслеживания и мониторинга. Вы можете работать в Интернете, смотреть видео, использовать любые приложения.',
-            // aboutPBlockFour: 'TBCC VPN защищает вас от нежелательного внимания со стороны шпионских сайтов и раздражающих рекламодателей. Никаких проблем с посещением веб-сайтов - ваш реальный IP никогда не будет заметен в Интернете.',
-            // aboutPBlockFive: 'TBCC VPN основан на децентрализованной платформе блокчейна Cellframe. Децентрализация позволяет вам быть независимым от расположения серверов, и ваше соединение будет максимально быстрым!'
-        },
+            textButtonOne: 'Депонировать',
+            textButtonTwo: 'В разработке',
+            textButtonThree: 'В разработке',
+            textButtonFour: 'Детали',
+            textButtonFive: 'Детали',
+            textButtonSix: 'Детали',
+            mainCaptionOne: 'Отслеживайте ваш DeFi портфель в реальном времени',
+            mainPBlockOne: 'Все рыночные изменения и возможности отслеживаются круглосуточно, без выходных, с помощью ботов и других специальных инструментов для вашего удобства. Следите за своими доходами, выкупайте свои средства и получайте проценты в одном месте в Интернете',
+            mainH2Two: '3 шага, чтобы начать зарабатывать на своем депозите',
+            mainCaptionTwo: 'Шаг 1',
+            mainPBlockTwo: 'Выберите одну или несколько стратегий, которые вам больше всего подходят. Создайте свой собственный портфель цифровых активов, который максимизирует ваш доход.',
+            mainCaptionThree: 'Шаг 2',
+            mainPBlockThree: 'Положите свои активы на депозит. Все ваши инвестиции будут автоматически распределены между протоколам DeFi.',
+            mainCaptionFour: 'Шаг 3',
+            mainPBlockFour: 'Вы начнете зарабатывать сразу после того, как положите свои активы на депозит. Следите за ставкой, своим доходом, другими стратегиями, чтобы делать больше инвестиций и расширять свой цифровой портфель, чтобы создать свою личную стратегию заработка.',
+            mainCaptionFive: 'Мы используем ведущие проверенные протоколы',
+            mainPBlockFive: 'Просто выберите свою лучшую стратегию и посмотрите, как активы автоматически распределяются по лучшим протоколам DeFi',
+            textButtonSeven: 'Присоединиться к DAO',
+            mainCaptionSix: 'Готовы начать работу с Defirium?',
+            formEmail: 'Ваша электронная почта',
+            formButton: 'Подписаться',
+            copyright: '2020 Defirium. Все права защищены',
+            terms: 'Условия пользования',
+            police: 'Политика конфиденциальности'
+            },
         CH: {
             menuItemOne: '使用方法',
             menuItemTwo: 'VTBC令牌',
@@ -299,18 +218,31 @@ function setLanguage(dictionary, language)
     $('#hintOne').text(dictionary[language].hintOne);
     $('#hintTwo').text(dictionary[language].hintTwo);
     $('#hintThree').text(dictionary[language].hintThree);
-
+    $('#textButtonOne').text(dictionary[language].textButtonOne);
+    $('#textButtonTwo').text(dictionary[language].textButtonTwo);
+    $('#textButtonThree').text(dictionary[language].textButtonThree);
+    $('#textButtonFour').text(dictionary[language].textButtonFour);
+    $('#textButtonFive').text(dictionary[language].textButtonFive);
+    $('#textButtonSix').text(dictionary[language].textButtonSix);
     $('#mainCaptionOne').text(dictionary[language].mainCaptionOne);
     $('#mainPBlockOne').text(dictionary[language].mainPBlockOne);
+    $('#mainH2Two').text(dictionary[language].mainH2Two);
     $('#mainCaptionTwo').text(dictionary[language].mainCaptionTwo);
-    $('#mainUlBlockLiOne').text(dictionary[language].mainUlBlockLiOne);
-    $('#mainUlBlockLiTwo').text(dictionary[language].mainUlBlockLiTwo);
-    $('#mainUlBlockLiThree').text(dictionary[language].mainUlBlockLiThree);
-    $('#mainUlBlockLiFour').text(dictionary[language].mainUlBlockLiFour);
-    $('#mainUlBlockLiFive').text(dictionary[language].mainUlBlockLiFive);
-    $('#mainUlBlockLiSix').text(dictionary[language].mainUlBlockLiSix);
-    $('#mainCaptionThree').text(dictionary[language].mainCaptionThree);
     $('#mainPBlockTwo').text(dictionary[language].mainPBlockTwo);
+    $('#mainCaptionThree').text(dictionary[language].mainCaptionThree);
+    $('#mainPBlockThree').text(dictionary[language].mainPBlockThree);
+    $('#mainCaptionFour').text(dictionary[language].mainCaptionFour);
+    $('#mainPBlockFour').text(dictionary[language].mainPBlockFour);
+    $('#mainCaptionFive').text(dictionary[language].mainCaptionFive);
+    $('#mainPBlockFive').text(dictionary[language].mainPBlockFive);
+    $('#textButtonSeven').text(dictionary[language].textButtonSeven);
+    $('#mainCaptionSix').text(dictionary[language].mainCaptionSix);
+    $('#formEmail').attr('placeholder', dictionary[language].formEmail);
+    $('#formButton').attr('value', dictionary[language].formButton);
+    $('#copyright').text(dictionary[language].copyright);
+    $('#terms').text(dictionary[language].terms);
+    $('#police').text(dictionary[language].police);
+
     $('#textButton').text(dictionary[language].textButton);
     $('#footerItemOne').text(dictionary[language].footerItemOne);
     $('#footerItemFour').text(dictionary[language].footerItemFour);

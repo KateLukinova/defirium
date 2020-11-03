@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Gilroy-Black';
     src: url('../fonts/gilroy-black.eot'); /* IE 9 Compatibility Mode */
@@ -402,6 +403,7 @@ a.m-btn, button.m-btn {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
+            white-space: nowrap;
         }
         &.active:after {
             content: '';
@@ -454,6 +456,7 @@ a.m-btn, button.m-btn {
 
 .select2-container {
     width: 120px!important;
+    font-family: 'Gilroy-Medium', sans-serif;
 }
 
 .select2-container--default .select2-selection--single {
@@ -462,6 +465,8 @@ a.m-btn, button.m-btn {
     border-radius: 6px;
     padding: 6px;
     height: 35px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 14px;
     &:focus {
         border: none;
         outline: none;
@@ -476,17 +481,25 @@ a.m-btn, button.m-btn {
 
 .select2-dropdown {
     border: none;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+option {
+    font-size: 14px;
+    line-height: 1.8;
+    font-family: 'Gilroy-Medium', sans-serif;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: #ececec;
     color: #333333;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.8;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     position: relative;
     padding-left: 20px;
+    font-family: 'Gilroy-Medium', sans-serif;
 }
 .select2-results__option--selectable {
     font-size: 18px;
@@ -501,11 +514,18 @@ a.m-btn, button.m-btn {
 }
 
 .police-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    max-width: 160px;
+    max-width: 180px;
     width: 90%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 100px;
@@ -515,11 +535,16 @@ a.m-btn, button.m-btn {
         font-weight: 500;
         font-size: 12px;
         line-height: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
         color: #515151;
         text-decoration: none;
+        max-width: 90px;
     }
 }
 
@@ -631,8 +656,14 @@ a.m-btn, button.m-btn {
     }
 
     .link-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin: auto;
         margin-top: 90px;
@@ -646,12 +677,19 @@ a.m-btn, button.m-btn {
 }
 
 .trade-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     max-width: 1000px;
     padding: 0 10px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: auto;
     margin-top: 65px;
@@ -661,14 +699,25 @@ a.m-btn, button.m-btn {
         height: auto;
         min-height: 380px;
         background-color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         border-radius: 10px;
+        -webkit-box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
         padding: 30px;
         padding-top: 40px;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
 
@@ -679,8 +728,14 @@ a.m-btn, button.m-btn {
         line-height: 1.2;
         color: #323232;
         text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         &:before {
             content: '';
@@ -706,15 +761,28 @@ a.m-btn, button.m-btn {
     }
 
     .trade-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 100%;
     }
 
     .trade-value {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 120px;
         .number {
@@ -735,8 +803,14 @@ a.m-btn, button.m-btn {
             text-align: center;
             color: #606060;
             margin-top: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
             svg {
                 margin-left: 4px;
@@ -749,10 +823,14 @@ a.m-btn, button.m-btn {
                 }
                 &:hover {
                     .hint {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
                         position: absolute;
                         bottom: 0;
                         left: 50%;
+                        -webkit-transform: translate(-50%, 120%);
+                        -ms-transform: translate(-50%, 120%);
                         transform: translate(-50%, 120%);
                         background-color: white;
                         border: 1px solid #999999;
@@ -826,6 +904,8 @@ a.m-btn, button.m-btn {
             &.two-phone {
                 img {
                     max-width: 470px;
+                    -webkit-transform: translateY(100px);
+                    -ms-transform: translateY(100px);
                     transform: translateY(100px);
                 }
             }
@@ -887,8 +967,14 @@ a.m-btn, button.m-btn {
 }
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     .copyright {
@@ -897,11 +983,19 @@ footer {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
+        flex-direction: column;
         color: #515151;
         margin: 30px auto;
+        a {
+            color: #515151;
+        }
     }
 }
 
@@ -1390,9 +1484,14 @@ h2.big-text {
 }
 
 .hero-form-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     border: 1px solid #CDCDCD;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 8px;
     width: 100%;
@@ -1404,6 +1503,7 @@ h2.big-text {
 .hero-email-input {
     border: none;
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     padding-left: 24px;
     font-family: 'Gilroy-Medium', sans-serif;
@@ -1411,18 +1511,25 @@ h2.big-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     letter-spacing: 0.02em;
     color: #606060;
+    width: 70%;
     &:hover {
         border: none;
         outline: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     &:focus {
         border: none;
         outline: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 }
@@ -1438,23 +1545,32 @@ h2.big-text {
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     border: none;
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
     &:hover {
         border: none;
         outline: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
     &:focus {
         border: none;
         outline: none;
+        -webkit-box-shadow: none;
         box-shadow: none;
     }
 }
@@ -1495,6 +1611,9 @@ h2.big-text {
 @media (max-width: 990px) {
 
     .header-col {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     }
     .m-navbar {
@@ -1674,8 +1793,15 @@ h2.big-text {
             }
             .text {
                 padding-right: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
                 flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 h2 {
                     display: block;
@@ -1697,8 +1823,15 @@ h2.big-text {
     }
 
     .trade-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         .trade-item {
             margin-bottom: 20px;
@@ -1723,15 +1856,24 @@ h2.big-text {
 
     .two-block .column .img.two-phone img {
         max-width: 100%;
+        -webkit-transform: none;
+        -ms-transform: none;
         transform: none;
     }
 
     .two-block .link-box {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-top: 30px;
         margin-bottom: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         a {
             margin: 5px;

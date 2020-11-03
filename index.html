@@ -103,7 +103,7 @@
                     </div>
                     <div class="button-box">
                         <a href="#" class="m-btn" id="textButtonOne">deposit</a>
-                        <a href="#" class="m-btn transparent">details</a>
+                        <a href="#" class="m-btn transparent" id="textButtonFour">details</a>
                     </div>
                 </div>
                 <div class="trade-item">
@@ -130,7 +130,7 @@
                     </div>
                     <div class="button-box">
                         <a href="#" class="m-btn gray" id="textButtonTwo">coming soon</a>
-                        <a href="#" class="m-btn transparent">details</a>
+                        <a href="#" class="m-btn transparent" id="textButtonFive">details</a>
                     </div>
                 </div>
                 <div class="trade-item">
@@ -157,7 +157,7 @@
                     </div>
                     <div class="button-box">
                         <a href="#" class="m-btn gray" id="textButtonThree">coming soon</a>
-                        <a href="#" class="m-btn transparent">details</a>
+                        <a href="#" class="m-btn transparent" id="textButtonSix">details</a>
                     </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
         <div class="two-block">
             <div class="column" data-aos="fade-up">
                 <div class="text">
-                    <h2 id="mainCaptionTwo">Track your DeFi portfolio in<br> real time</h2>
+                    <h2 id="mainCaptionOne">Track your DeFi portfolio in<br> real time</h2>
                     <p id="mainPBlockOne">
                         All market changes and opportunites are monitored 24/7 by boots ans other special tools for your convience. See your earnings and redeem your funds and interest in one place online.
                     </p>
@@ -192,13 +192,13 @@
 
     <section>
         <div class="center-block">
-            <h2 class="mb-5">3 steps to start earning on your deposit</h2>
+            <h2 class="mb-5" id="mainH2Two">3 steps to start earning on your deposit</h2>
         </div>
         <div class="two-block mobile-column-reverse">
             <div class="column" data-aos="fade-up">
                 <div class="text">
-                    <h2 id="mainCaptionThree">Step 1</h2>
-                    <p class="big">
+                    <h2 id="mainCaptionTwo">Step 1</h2>
+                    <p class="big" id="mainPBlockTwo">
                         Choose one or several strategies that fits you best. Create your own portfolio of digital assets that will maximize your income.
                     </p>
                 </div>
@@ -217,8 +217,8 @@
             </div>
             <div class="column" data-aos="fade-up">
                 <div class="text">
-                    <h2 id="mainCaptionFour">Step 2</h2>
-                    <p id="mainPBlockTwo" class="big">
+                    <h2 id="mainCaptionThree">Step 2</h2>
+                    <p id="mainPBlockThree" class="big">
                         Put your assets on a deposit. All your investments will be allocated across DeFi protocols automatically.
                     </p>
                 </div>
@@ -227,8 +227,8 @@
         <div class="two-block mobile-column-reverse">
             <div class="column" data-aos="fade-up">
                 <div class="text">
-                    <h2 id="mainCaptionFive">Step 3</h2>
-                    <p class="big">
+                    <h2 id="mainCaptionFour">Step 3</h2>
+                    <p class="big" id="mainPBlockFour">
                         You will start earning immediately aftrer you put your assets on the deposit. Monitor the rate, your income, other strategies, to make more investments and to wide you digital portfolio in order to create your personal strategy of earning.
                     </p>
                 </div>
@@ -246,10 +246,10 @@
             <div class="column" data-aos="fade-up">
                 <div class="text">
                     <h2 id="mainCaptionFive">We are using leading audited protocols</h2>
-                    <p class="big">
+                    <p class="big" id="mainPBlockFive">
                         Just choose your best strategy and see how assets are automatically allocated across best DeFi protocols
                     </p>
-                    <a href="#" class="m-btn mt-5">Join DAO</a>
+                    <a href="#" class="m-btn mt-5" id="textButtonSeven">Join DAO</a>
                 </div>
             </div>
         </div>
@@ -257,11 +257,11 @@
 
     <footer class="container-fluid">
         <div class="center-block">
-            <h2 class="big-text">Ready to get start with Defirium?</h2>
+            <h2 class="big-text" id="mainCaptionSix">Ready to get start with Defirium?</h2>
             <form class="hero-form" action="/">
                 <div class="hero-form-input">
-                    <input class="hero-email-input" type="email"  placeholder="Your email" required>
-                    <input class="hero-form-submit" type="submit" value="Subscribe">
+                    <input class="hero-email-input" type="email"  id="formEmail" placeholder="Your email" required>
+                    <input class="hero-form-submit" type="submit" id="formButton" value="Subscribe">
                 </div>
             </form>
             <div class="link-box">
@@ -276,8 +276,8 @@
                 </a>
             </div>
             <div class="copyright">
-                © 2020 Defirium. All rights reserved.<br>
-                info@defirium.com
+                <span id="copyright">© 2020 Defirium. All rights reserved.</span>
+                <a href="mailto:info@defirium.com">info@defirium.com</a>
             </div>
             <select name="lang" class="lang-select lang">
                 <option value="EN">English</option>
@@ -285,8 +285,8 @@
                 <option value="RU">Русский</option>
             </select>
             <div class="police-block">
-                <a href="#" class="police-link">Terms of use</a>
-                <a href="#" class="police-link">Privacy Policy</a>
+                <a href="#" class="police-link" id="terms">Terms of use</a>
+                <a href="#" class="police-link" id="police">Privacy Policy</a>
             </div>
         </div>
     </footer>
