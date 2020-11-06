@@ -88,7 +88,8 @@ $( document ).ready(function() {
             joinCaptionOne: 'Token calculator request',
             joinCaptionTwo: 'requested amount*',
             joinCaptionThree: 'offered amount*',
-            joinButtonTwo: 'Create request'
+            joinButtonTwo: 'Create request',
+            img: 'img/shema.svg'
         },
         RU: {
             menuItemOne: 'Продукты',
@@ -136,7 +137,8 @@ $( document ).ready(function() {
             joinCaptionOne: 'Калькулятор запроса токенов',
             joinCaptionTwo: 'ЗАПРАШИВАЕМАЯ СУММА*',
             joinCaptionThree: 'ПРЕДЛОЖЕННАЯ СУММА*',
-            joinButtonTwo: 'Создать заявку'
+            joinButtonTwo: 'Создать заявку',
+            img: 'img/shemaru.svg'
         }
     }
 
@@ -218,5 +220,6 @@ function setLanguage(dictionary, language)
     $('#joinCaptionTwo').text(dictionary[language].joinCaptionTwo);
     $('#joinCaptionThree').text(dictionary[language].joinCaptionThree);
     $('#joinButtonTwo').text(dictionary[language].joinButtonTwo);
+    $("#img").attr('src',dictionary[language].img);
 
 }
