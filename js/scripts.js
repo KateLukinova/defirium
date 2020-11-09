@@ -17,6 +17,44 @@ $( document ).ready(function() {
         templateSelection: formatState
     });
 
+    $('.advantages-carousel').slick({
+        loop: true,
+        infinite: false,
+        arrows: false,
+        centerMode: false,
+        slidesToShow: 3.5,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2.8,
+                    centerMode: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2.2,
+                    centerMode: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $(document).scroll(function() {
+        var scrollY= $(window).scrollTop();
+    });
+
     function formatState (opt) {
         if (!opt.id) {
             return opt.text.toUpperCase();
@@ -43,7 +81,7 @@ $( document ).ready(function() {
 
     var dictionary = {
         EN: {
-            menuItemOne: ' Products',
+            menuItemOne: 'DeFi',
             menuItemTwo: 'Profit',
             menuItemThree: 'About',
             menuItemFour: 'Dashboard',
@@ -92,7 +130,7 @@ $( document ).ready(function() {
             img: 'img/shema.svg'
         },
         RU: {
-            menuItemOne: 'Продукты',
+            menuItemOne: 'DeFi',
             menuItemTwo: 'Доход',
             menuItemThree: 'О нас',
             menuItemFour: 'Приборная панель',
