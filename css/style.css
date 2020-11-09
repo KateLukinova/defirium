@@ -384,7 +384,7 @@ option {
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: white;
   color: #333333;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.8; }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -1664,7 +1664,7 @@ h2.about-h2 {
   font-family: 'Gilroy-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000; }
@@ -1902,8 +1902,6 @@ h2.about-h2 {
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
       margin-bottom: 0; }
-      .two-block-center .img-block img#tn4 {
-        opacity: 1; }
   .two-block-center .works-list {
     display: -webkit-box;
     display: -ms-flexbox;

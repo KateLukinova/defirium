@@ -53,6 +53,53 @@ $( document ).ready(function() {
 
     $(document).scroll(function() {
         var scrollY= $(window).scrollTop();
+        var constTop = 60;
+
+        if (scrollY > 850 && scrollY <= 1250) {
+            $('#tn1').css('opacity', '1')
+            $('#tn2').css('opacity', '0')
+            $('#tn3').css('opacity', '0')
+            $('#tn4').css('opacity', '0')
+            $('#tn5').css('opacity', '0')
+        } else {
+            if (scrollY > 1250 && scrollY <= 1400) {
+                $('#tn2').css('opacity', '1')
+                $('#tn1').css('opacity', '0')
+                $('#tn3').css('opacity', '0')
+                $('#tn4').css('opacity', '0')
+                $('#tn5').css('opacity', '0')
+            } else {
+                if (scrollY > 1400 && scrollY <= 1550) {
+                    $('#tn3').css('opacity', '1')
+                    $('#tn2').css('opacity', '0')
+                    $('#tn1').css('opacity', '0')
+                    $('#tn4').css('opacity', '0')
+                    $('#tn5').css('opacity', '0')
+                } else {
+                    if (scrollY > 1550 && scrollY <= 1700) {
+                        $('#tn4').css('opacity', '1')
+                        $('#tn2').css('opacity', '0')
+                        $('#tn3').css('opacity', '0')
+                        $('#tn1').css('opacity', '0')
+                        $('#tn5').css('opacity', '0')
+                    } else {
+                        if (scrollY > 1700 && scrollY <= 2000) {
+                            $('#tn5').css('opacity', '1')
+                            $('#tn2').css('opacity', '0')
+                            $('#tn3').css('opacity', '0')
+                            $('#tn4').css('opacity', '0')
+                            $('#tn1').css('opacity', '0')
+                        } else {
+                            $('#tn1').css('opacity', '0')
+                            $('#tn2').css('opacity', '0')
+                            $('#tn3').css('opacity', '0')
+                            $('#tn4').css('opacity', '0')
+                            $('#tn5').css('opacity', '0')
+                        }
+                    }
+                }
+            }
+        }
     });
 
     function formatState (opt) {
@@ -102,7 +149,7 @@ $( document ).ready(function() {
             textButtonFive: 'Details',
             textButtonSix: 'Details',
             mainCaptionOne: 'Track your DeFi portfolio in real time',
-            mainPBlockOne: 'All market changes and opportunites are monitored 24/7 by bots ans other special tools for your convience. See your earnings and redeem your funds and interest in one place online',
+            mainPBlockOne: 'All market changes and opportunites are monitored 24/7 by bots and other special tools for your convience. See your earnings and redeem your funds and interest in one place online',
             mainH2Two: '3 steps to start earning on your deposit',
             mainCaptionTwo: 'Step 1',
             mainPBlockTwo: 'Choose one or several strategies that fits you best. Create your own portfolio of digital assets that will maximize your income.',
