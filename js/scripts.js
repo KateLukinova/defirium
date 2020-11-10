@@ -53,7 +53,6 @@ $( document ).ready(function() {
 
     $(document).scroll(function() {
         var scrollY= $(window).scrollTop();
-        var constTop = 60;
 
         if (scrollY > 850 && scrollY <= 1250) {
             $('#tn1').css('opacity', '1')
@@ -100,6 +99,74 @@ $( document ).ready(function() {
                 }
             }
         }
+
+        if (scrollY > 350 && scrollY <= 1000) {
+            $('#ln1').css('opacity', '1')
+            $('#ln2').css('opacity', '0')
+            $('#ln3').css('opacity', '0')
+            $('#ln4').css('opacity', '0')
+            $('#ln5').css('opacity', '0')
+        } else {
+            if (scrollY > 1000 && scrollY <= 1150) {
+                $('#ln2').css('opacity', '1')
+                $('#ln1').css('opacity', '0')
+                $('#ln3').css('opacity', '0')
+                $('#ln4').css('opacity', '0')
+                $('#ln5').css('opacity', '0')
+            } else {
+                if (scrollY > 1150 && scrollY <= 1300) {
+                    $('#ln3').css('opacity', '1')
+                    $('#ln2').css('opacity', '0')
+                    $('#ln1').css('opacity', '0')
+                    $('#ln4').css('opacity', '0')
+                    $('#ln5').css('opacity', '0')
+                } else {
+                    if (scrollY > 1300 && scrollY <= 1400) {
+                        $('#ln4').css('opacity', '1')
+                        $('#ln2').css('opacity', '0')
+                        $('#ln3').css('opacity', '0')
+                        $('#ln1').css('opacity', '0')
+                        $('#ln5').css('opacity', '0')
+                    } else {
+                        if (scrollY > 1400 && scrollY <= 1700) {
+                            $('#ln5').css('opacity', '1')
+                            $('#ln2').css('opacity', '0')
+                            $('#ln3').css('opacity', '0')
+                            $('#ln4').css('opacity', '0')
+                            $('#ln1').css('opacity', '0')
+                        } else {
+                            $('#ln1').css('opacity', '0')
+                            $('#ln2').css('opacity', '0')
+                            $('#ln3').css('opacity', '0')
+                            $('#ln4').css('opacity', '0')
+                            $('#ln5').css('opacity', '0')
+                        }
+                    }
+                }
+            }
+        }
+
+        if (scrollY > 1900 && scrollY <= 2750) {
+            $('#sn1').css('opacity', '1')
+            $('#sn2').css('opacity', '0')
+            $('#sn3').css('opacity', '0')
+        } else {
+            if (scrollY > 2750 && scrollY <= 3000) {
+                $('#sn2').css('opacity', '1')
+                $('#sn1').css('opacity', '0')
+                $('#sn3').css('opacity', '0')
+            } else {
+                if (scrollY > 3000 && scrollY <= 3550) {
+                    $('#sn3').css('opacity', '1')
+                    $('#sn2').css('opacity', '0')
+                    $('#sn1').css('opacity', '0')
+                } else {
+                        $('#sn3').css('opacity', '0')
+                        $('#sn1').css('opacity', '0')
+                        $('#sn2').css('opacity', '0')
+                    }
+                }
+            }
     });
 
     function formatState (opt) {
@@ -174,7 +241,58 @@ $( document ).ready(function() {
             joinCaptionTwo: 'requested amount*',
             joinCaptionThree: 'offered amount*',
             joinButtonTwo: 'Create request',
-            img: 'img/shema.svg'
+            img: 'img/shema.svg',
+            defiH2One: 'Learn more about our strategy and start working with DeFi now',
+            defiItemOne: 'Total Value Locked (TLV)',
+            defiItemTwo: 'Annual Percentage Yield (APY)',
+            defiItemThree: 'Stable coins are deposited across best DeFi protocols',
+            defiItemFour: 'Get income due to increasing the value of the asset in comparison with the previous period',
+            defiH2Two: 'How it works',
+            howItemOne: 'Buy USDT via your wallet',
+            howItemTwo: 'Join our DAO and put your assets on the deposit',
+            howItemThree: 'Get TBQ on account of your USDT',
+            howItemFour: 'Monitor how the price changes',
+            howItemFive: 'Get your profit',
+            defiH2Three: 'Main advantages',
+            carouselH4One: 'Decentralized assets',
+            carouselPOne: 'Manage your savings from any place in the world, in any time. Defirium is a decentralized app, that means that your are the only person who can control your assets.',
+            carouselH4Two: 'No government control',
+            carouselPTwo: 'Assets that you receive can\'t be under the control from government regulators.',
+            carouselH4Three: 'Low fees',
+            carouselPThree: 'We give you an opportunity to make transactions with low fees for maximum convenience',
+            carouselH4Four: 'Digital DeFi with automated control',
+            carouselPFour: 'Distribution work with protocols is performed online with the help of special mechanisms',
+            carouselH4Five: 'Sectional',
+            carouselPFive: 'Our innovative mechanism can combine several strategies in one in order to maximize your profit.',
+            profitH2One: 'Profit',
+            profitPOne: 'Check out DeFi scenarious those we use in Defirium.',
+            profitH4One: 'Flash loans',
+            profitH4Two: 'Deposit assets across DeFi protocols',
+            profitH4Three: ' Yield Farming',
+            profitH2Two: 'Flash loans',
+            profitPTwo: 'Instant loans without collateral, those can be obtained by any user. The main advantage of flash loans is the lack of necessity for start-up capital for the begging of work with DeFi. The liquidity has to be returned to the pool within one transaction block',
+            profitH2Three: 'How it works',
+            profitItemOne: 'Take out a flash loan of the needed amount',
+            profitItemTwo: 'Use the loan to buy tokens on DEX A',
+            profitItemThree: 'Resell tokens on DEX B',
+            profitItemFour: 'Return the loan (plus any interest)',
+            profitItemFive: 'Keep your profit',
+            profitH2Four: 'Deposit assets across DeFi protocols',
+            profitPThree: 'We are always in a search for best strategies those will be as profitable as can be',
+            profitH2Five: 'Principle of work',
+            workItemOne: 'Choosing the strategy',
+            workItemTwo: 'Deposit tokens with the offered conditions',
+            workItemThree: 'Gain interest on the deposit',
+            profitH2Six: 'Yield Farming',
+            profitPFour: 'Way to generate rewards with cryptocurrency holdings. It involves you lending your funds to others through smart contracts. In return for your service, you earn fees in the form of crypto. It means locking up cryptocurrencies and getting rewards with the use of different strategies',
+            profitH2Seven: ' Types of strategies for Yield Farming',
+            strategiesH4One: 'Earning interest through loan funds and fees',
+            strategiesItemOne: 'To do this, the farmer needs to register in a DeFi project that issues loans. The commission received is the crypto farmer\'s income from participating in the project',
+            strategiesH4Two: 'Mining (extraction) of liquidity',
+            strategiesItemTwo: 'Users are rewarded for working with a specific protocol. They act as liquidity providers by promoting the project.',
+            strategiesH4Three: 'Conducting swaps - the exchange of tokens of one protocol for tokens of another',
+            strategiesItemThree: 'An important part of profitable farming is constant market research in order to find alternative strategies. As soon as a community member finds a new, more profitable investment option, he reallocates funds',
+            profitH2Last: 'Ready to get your profit?'
         },
         RU: {
             menuItemOne: 'DeFi',
@@ -223,7 +341,58 @@ $( document ).ready(function() {
             joinCaptionTwo: 'ЗАПРАШИВАЕМАЯ СУММА*',
             joinCaptionThree: 'ПРЕДЛОЖЕННАЯ СУММА*',
             joinButtonTwo: 'Создать заявку',
-            img: 'img/shemaru.svg'
+            img: 'img/shemaru.svg',
+            defiH2One: 'Узнайте больше о нашей стратегии и начни работать с DeFi прямо сейчас',
+            defiItemOne: 'Общая Заблокированная Стоимость (TLV)',
+            defiItemTwo: 'Годовая Процентная Доходность (APY)',
+            defiItemThree: 'Стейблкоины депонируются между лучшими протоколам DeFi',
+            defiItemFour: 'Получайте доход за счет увеличения стоимости актива по сравнению с предыдущим периодом',
+            defiH2Two: 'Как это работает',
+            howItemOne: 'Купите USDT при помощи своего кошелька',
+            howItemTwo: 'Присоединяйтесь к нашему DAO и положите свои активы на депозит',
+            howItemThree: 'Получите TBQ вместо ваших USDT',
+            howItemFour: 'Следите за изменением цены',
+            howItemFive: 'Получите свою прибыль',
+            defiH2Three: 'Основные достоинства',
+            carouselH4One: 'Децентрализованные активы',
+            carouselPOne: 'Управляйте своими сбережениями из любой точки мира в любое время. Defirium - это децентрализованное приложение, а это означает, что вы единственный человек, который может контролировать ваши активы.',
+            carouselH4Two: 'Отсутсвие государственного контроля',
+            carouselPTwo: 'Активы, которые вы получаете, не могут находиться под контролем государственных регулирующих органов.',
+            carouselH4Three: 'Низкие комиссии',
+            carouselPThree: 'Мы даем вам возможность совершать транзакции с низкими комиссиями для максимального удобства.',
+            carouselH4Four: 'Цифровой DeFi с автоматическим управлением',
+            carouselPFour: 'Распределительная работа с протоколами осуществляется онлайн с помощью специальных механизмов.',
+            carouselH4Five: 'Секционный',
+            carouselPFive: 'Наш инновационный механизм может объединить несколько стратегий в одну, чтобы максимизировать вашу прибыль.',
+            profitH2One: 'Доход',
+            profitPOne: 'Ознакомьтесь со сценариями DeFi, которые мы используем в Defirium',
+            profitH4One: 'Флэш-займы',
+            profitH4Two: 'Депонирование активов между протоколами DeFi',
+            profitH4Three: 'Урожайное Земледелие',
+            profitH2Two: 'Флэш-займы',
+            profitPTwo: 'Мгновенные займы без залога, которые может получить любой пользователь. Основным преимуществом флэш-кредитов является отсутствие необходимости в стартовом капитале для начала работы с DeFi. Ликвидность должна быть возвращена в пул в пределах одного блока транзакции.',
+            profitH2Three: 'Как это работает',
+            profitItemOne: 'Возьмите флэш-займ на необходимую сумму',
+            profitItemTwo: 'Используйте займ для покупки токенов на DEX A',
+            profitItemThree: 'Перепродайте токены на DEX B',
+            profitItemFour: 'Верните займ (плюс проценты)',
+            profitItemFive: 'Получите вашу прибыль',
+            profitH2Four: 'Депонирование активов между протоколами DeFi',
+            profitPThree: 'We are always in a search for best strategies those will be as profitable as can be',
+            profitH2Five: 'Принцип работы',
+            workItemOne: 'Выберите стратегию',
+            workItemTwo: 'Депонируйте токены с предложенными условиями',
+            workItemThree: 'Получите проценты по депозиту',
+            profitH2Six: 'Урожайное Земледелие',
+            profitPFour: 'Способ получения вознаграждения за счет владений криптовалютой. Это предполагает, что вы ссужаете свои средства другим людям через смарт-контракты. В обмен на свои услуги вы получаете комиссию в виде криптовалюты. Это означает блокировку криптовалют и получение вознаграждений с использованием различных стратегий',
+            profitH2Seven: 'Типы стратегий для Урожайного Земледелия',
+            strategiesH4One: 'Получение процентов за счет заемных средств и комиссий',
+            strategiesItemOne: 'Для этого фермеру необходимо зарегистрироваться в проекте DeFi, который выдает кредиты. Полученная комиссия - это доход криптофермера от участия в проекте',
+            strategiesH4Two: 'Добыча ликвидности',
+            strategiesItemTwo: 'Пользователи получают вознаграждение за работу с определенным протоколом. Они выступают в качестве поставщиков ликвидности, продвигая проект',
+            strategiesH4Three: 'Проведение свопов - обмена токенов одного протокола на токены другого',
+            strategiesItemThree: 'Важной частью прибыльного фармерства является постоянное исследование рынка с целью поиска альтернативных стратегий. Как только член сообщества находит новый, более выгодный вариант инвестирования, он перераспределяет средства',
+            profitH2Last: 'Готовы получить вашу прибыль?'
         }
     }
 
@@ -306,5 +475,55 @@ function setLanguage(dictionary, language)
     $('#joinCaptionThree').text(dictionary[language].joinCaptionThree);
     $('#joinButtonTwo').text(dictionary[language].joinButtonTwo);
     $("#img").attr('src',dictionary[language].img);
+    $("#defiH2One").text(dictionary[language].defiH2One);
+    $("#defiItemOne").text(dictionary[language].defiItemOne);
+    $("#defiItemTwo").text(dictionary[language].defiItemTwo);
+    $("#defiItemThree").text(dictionary[language].defiItemThree);
+    $("#defiItemFour").text(dictionary[language].defiItemFour);
+    $("#defiH2Two").text(dictionary[language].defiH2Two);
+    $("#howItemOne").text(dictionary[language].howItemOne);
+    $("#howItemTwo").text(dictionary[language].howItemTwo);
+    $("#howItemThree").text(dictionary[language].howItemThree);
+    $("#howItemFour").text(dictionary[language].howItemFour);
+    $("#defiH2Three").text(dictionary[language].defiH2Three);
+    $("#carouselH4One").text(dictionary[language].carouselH4One);
+    $("#carouselH4Two").text(dictionary[language].carouselH4Two);
+    $("#carouselH4Three").text(dictionary[language].carouselH4Three);
+    $("#carouselH4Four").text(dictionary[language].carouselH4Four);
+    $("#carouselH4Five").text(dictionary[language].carouselH4Five);
+    $("#carouselPOne").text(dictionary[language].carouselPOne);
+    $("#carouselPTwo").text(dictionary[language].carouselPTwo);
+    $("#carouselPThree").text(dictionary[language].carouselPThree);
+    $("#carouselPFour").text(dictionary[language].carouselPFour);
+    $("#carouselPFive").text(dictionary[language].carouselPFive);
+    $("#profitH2One").text(dictionary[language].profitH2One);
+    $("#profitPOne").text(dictionary[language].profitPOne);
+    $("#profitH4One").text(dictionary[language].profitH4One);
+    $("#profitH4Two").text(dictionary[language].profitH4Two);
+    $("#profitH4Three").text(dictionary[language].profitH4Three);
+    $("#profitH2Two").text(dictionary[language].profitH2Two);
+    $("#profitPTwo").text(dictionary[language].profitPTwo);
+    $("#profitH2Three").text(dictionary[language].profitH2Three);
+    $("#profitItemOne").text(dictionary[language].profitItemOne);
+    $("#profitItemTwo").text(dictionary[language].profitItemTwo);
+    $("#profitItemThree").text(dictionary[language].profitItemThree);
+    $("#profitItemFour").text(dictionary[language].profitItemFour);
+    $("#profitItemFive").text(dictionary[language].profitItemFive);
+    $("#profitH2Four").text(dictionary[language].profitH2Four);
+    $("#profitPThree").text(dictionary[language].profitPThree);
+    $("#profitH2Five").text(dictionary[language].profitH2Five);
+    $("#workItemOne").text(dictionary[language].workItemOne);
+    $("#workItemTwo").text(dictionary[language].workItemTwo);
+    $("#workItemThree").text(dictionary[language].workItemThree);
+    $("#profitH2Six").text(dictionary[language].profitH2Six);
+    $("#profitPFour").text(dictionary[language].profitPFour);
+    $("#profitH2Seven").text(dictionary[language].profitH2Seven);
+    $("#strategiesH4One").text(dictionary[language].strategiesH4One);
+    $("#strategiesH4Three").text(dictionary[language].strategiesH4Three);
+    $("#strategiesH4Two").text(dictionary[language].strategiesH4Two);
+    $("#strategiesItemOne").text(dictionary[language].strategiesItemOne);
+    $("#strategiesItemThree").text(dictionary[language].strategiesItemThree);
+    $("#strategiesItemTwo").text(dictionary[language].strategiesItemTwo);
+    $("#profitH2Last").text(dictionary[language].profitH2Last);
 
 }
