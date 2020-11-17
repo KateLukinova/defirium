@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="yandex-verification" content="cf005d80655cbeea" />
+<!--    <link rel="shortcut icon" type="image/x-icon" sizes="256x256" href="favicon.png"/>-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+  </head>
+<body>
+
+    <div class="wrapper toggled">
+
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    <img src="img/logo-min.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M29.1227 9.10044L15.6461 0.194194C15.2542 -0.0647315 14.7457 -0.0647315 14.3538 0.194194L0.877266 9.10044C0.549023 9.31736 0.351562 9.68462 0.351562 10.0781V28.8281C0.351562 29.4754 0.876211 30 1.52344 30C1.86521 30 27.5588 30 28.4766 30C29.1238 30 29.6484 29.4754 29.6484 28.8281V10.0781C29.6484 9.68462 29.451 9.31736 29.1227 9.10044ZM17.3438 27.6563H12.6562V20.625H17.3438V27.6563ZM27.3047 27.6563H19.6875V19.4531C19.6875 18.8059 19.1629 18.2813 18.5156 18.2813H11.4844C10.8371 18.2813 10.3125 18.8059 10.3125 19.4531V27.6563H2.69531V10.7083L15 2.57656L27.3047 10.7083V27.6563Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="30" height="30" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span  class="sidebar-item">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="my-account.html">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.6066 18.2125C23.9452 16.551 21.9622 15.3281 19.7985 14.6C21.7939 13.1252 23.0904 10.7565 23.0904 8.09045C23.0905 3.62936 19.4612 0 15 0C10.5388 0 6.90949 3.62936 6.90949 8.09045C6.90949 10.7566 8.20605 13.1253 10.2015 14.6C8.03771 15.328 6.0549 16.551 4.39336 18.2125C1.56029 21.0456 0 24.8125 0 28.8191C0 29.4713 0.528691 30 1.1809 30H28.819C29.4713 30 29.9999 29.4713 29.9999 28.8191C30 24.8125 28.4397 21.0456 25.6066 18.2125ZM9.27141 8.09045C9.27141 4.93166 11.8412 2.36186 15.0001 2.36186C18.1589 2.36186 20.7287 4.93166 20.7287 8.09045C20.7287 11.2492 18.1589 13.819 15.0001 13.819C11.8412 13.8191 9.27141 11.2492 9.27141 8.09045ZM2.41658 27.6381C3.01389 21.221 8.42947 16.1809 15 16.1809C21.5705 16.1809 26.9861 21.221 27.5834 27.6381H2.41658Z"/>
+                    </svg>
+                    <span  class="sidebar-item">My Account</span>
+                </a>
+            </li>
+            <li>
+                <a href="dashboard.html" class="active">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.8281 2.92969C27.358 2.92969 2.05032 2.92969 1.17188 2.92969C0.524597 2.92969 0 3.45428 0 4.10156V25.8984C0 26.5457 0.524597 27.0703 1.17188 27.0703H28.8281C29.4754 27.0703 30 26.5457 30 25.8984C30 25.5004 30 4.82391 30 4.10156C30 3.45428 29.4754 2.92969 28.8281 2.92969ZM11.5624 5.27344H18.4373V11.0749H11.5624V5.27344ZM2.34375 5.27344H9.21867V11.0749H2.34375V5.27344ZM27.6562 24.7266H2.34375V13.4187H27.6562V24.7266ZM27.6562 11.0749H20.7813V5.27344H27.6562V11.0749ZM16.2289 19.3435L20.5833 14.989C21.0409 14.5315 21.7829 14.5315 22.2407 14.989C22.6982 15.4468 22.6982 16.1886 22.2407 16.6463L17.0574 21.8294C16.5999 22.2869 15.8576 22.2867 15.4001 21.8294L13.073 19.5023L9.41666 23.1587C8.95889 23.6163 8.21709 23.6163 7.75932 23.1587C7.30179 22.701 7.30179 21.9589 7.75932 21.5014L12.2445 17.0162C12.702 16.5587 13.4445 16.5589 13.9018 17.0162L16.2289 19.3435Z"/>
+                    </svg>
+                    <span class="sidebar-item">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="join-dao.html">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M26.4844 4.60945H25.3905V3.51562C25.3905 1.577 23.8136 0 21.8749 0H3.47649C1.5596 0 0 1.5596 0 3.47649V26.3086C0 28.344 1.65596 30 3.69141 30H26.4844C28.423 30 30 28.423 30 26.4844V8.12508C30 6.18645 28.423 4.60945 26.4844 4.60945ZM27.6562 19.5898H23.0665C21.8063 19.5898 20.7813 18.5648 20.7813 17.3046C20.7813 16.0446 21.8063 15.0195 23.0665 15.0195H27.6562V19.5898ZM3.47649 2.34375H21.8749C22.5211 2.34375 23.0468 2.86949 23.0468 3.51562V4.60945H3.47649C2.85187 4.60945 2.34375 4.1011 2.34375 3.47649C2.34375 2.85187 2.85187 2.34375 3.47649 2.34375ZM26.4844 27.6562H3.69141C2.94823 27.6562 2.34375 27.0518 2.34375 26.3086V6.76369C2.69897 6.88637 3.08006 6.95297 3.47649 6.95297H26.4844C27.1305 6.95297 27.6562 7.47871 27.6562 8.12485V12.6757H23.0665C20.514 12.6757 18.4376 14.7523 18.4376 17.3046C18.4376 19.8571 20.514 21.9335 23.0665 21.9335H27.6562V26.4844C27.6562 27.1305 27.1305 27.6562 26.4844 27.6562Z"/>
+                        </g>
+                    </svg>
+                    <span class="sidebar-item">Join DAO</span>
+                </a>
+            </li>
+        </ul>
+        <a href="#menu-toggle" class="menu-join toggled" id="menu-toggle">
+            <img src="img/menu-join.svg" alt="">
+        </a>
+    </div>
+
+    <div class="page-content-wrapper">
+        <div class="page-header">
+            <h2 id="joinH2One">Dashboard</h2>
+            <a href="#" class="m-btn" id="joinButtonOne">connect wallet</a>
+        </div>
+        <div class="dashboard-page">
+            <div class="dashboard-header">
+                <h3>Product1</h3>
+            </div>
+            <div class="value-box">
+                <div class="value-item">
+                    <div class="name">Token price, USD</div>
+                    <div class="value">
+                        $ 4.25
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="name">Portfolio, USD</div>
+                    <div class="value">
+                        $ 4 214 222.25
+                    </div>
+                </div>
+                <div class="value-item">
+                    <div class="name">APY, %</div>
+                    <div class="value">
+                        85.74%
+                    </div>
+                </div>
+            </div>
+            <div class="place chart-w-100">
+                <div class="name">Token Price, USD</div>
+                <div class="chart-panel">
+                    <div class="zoom">
+                        Zoom
+                        <a href="#">1h</a>
+                        <a href="#">1d</a>
+                        <a href="#">1w</a>
+                        <a href="#">1m</a>
+                        <a href="#">All</a>
+                    </div>
+                    <div class="panel-box">
+                        <div class="date-panel">
+                            <label for="date-from1">From:</label>
+                            <input type="text" placeholder="Oct, 31, 2020" id="date-from1" class="chart-date" onfocus="(this.type='date')">
+                        </div>
+                        <div class="date-panel">
+                            <label for="date-to1">To:</label>
+                            <input type="text" placeholder="Oct, 31, 2020" id="date-to1" class="chart-date" onfocus="(this.type='date')">
+                        </div>
+                    </div>
+                </div>
+                <div class="in">Increase: <span>2.55%</span></div>
+                <canvas id="chart1-canvas"></canvas>
+            </div>
+            <div class="place-box">
+                <div class="place value-list">
+                    <div class="name">Liquidity pools</div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#8B4EE9"/>
+                            </svg>
+                            Compound.Finance
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#3D62DB"/>
+                            </svg>
+                            SushiSwap
+                        </div>
+                        <span>17.98%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#ED9347"/>
+                            </svg>
+                            Balancer Pool Token
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#B9C7FA"/>
+                            </svg>
+                            Aave.com
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#8B4EE9"/>
+                            </svg>
+                            Compound.Finance
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#8B4EE9"/>
+                            </svg>
+                            Compound.Finance
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+                    <div class="val-list-item">
+                        <div class="name">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9" cy="9" r="9" fill="#8B4EE9"/>
+                            </svg>
+                            Compound.Finance
+                        </div>
+                        <span>63.83%</span>
+                    </div>
+
+                </div>
+                <div class="place chart">
+                    <div class="name">Portfolio value, USD</div>
+                    <div class="chart-panel">
+                        <div class="zoom">
+                            Zoom
+                            <a href="#">1h</a>
+                            <a href="#">1d</a>
+                            <a href="#">1w</a>
+                            <a href="#">1m</a>
+                            <a href="#">All</a>
+                        </div>
+                        <div class="panel-box">
+                            <div class="date-panel">
+                                <label for="date-from2">From:</label>
+                                <input type="text" placeholder="Oct, 31, 2020" id="date-from2" class="chart-date" onfocus="(this.type='date')">
+                            </div>
+                            <div class="date-panel">
+                                <label for="date-to2">To:</label>
+                                <input type="text" placeholder="Oct, 31, 2020" id="date-to2" class="chart-date" onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="in">Increase: <span>2.55%</span></div>
+                    <canvas id="chart2-canvas"></canvas>
+                </div>
+            </div>
+
+            <a href="#" class="m-btn w-100 mt-5">join-down</a>
+        </div>
+    </div>
+
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

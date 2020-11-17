@@ -51,6 +51,13 @@ $( document ).ready(function() {
         ]
     });
 
+    $(".carousel-button-prev").click(function () {
+        $('.advantages-carousel').slick('slickPrev');
+    });
+    $(".carousel-button-next").click(function () {
+        $('.advantages-carousel').slick('slickNext');
+    });
+
     $(document).scroll(function() {
         var scrollY= $(window).scrollTop();
 
@@ -61,28 +68,28 @@ $( document ).ready(function() {
             $('#tn4').css('opacity', '0')
             $('#tn5').css('opacity', '0')
         } else {
-            if (scrollY > 1250 && scrollY <= 1400) {
+            if (scrollY > 1250 && scrollY <= 1450) {
                 $('#tn2').css('opacity', '1')
                 $('#tn1').css('opacity', '0')
                 $('#tn3').css('opacity', '0')
                 $('#tn4').css('opacity', '0')
                 $('#tn5').css('opacity', '0')
             } else {
-                if (scrollY > 1400 && scrollY <= 1550) {
+                if (scrollY > 1450 && scrollY <= 1650) {
                     $('#tn3').css('opacity', '1')
                     $('#tn2').css('opacity', '0')
                     $('#tn1').css('opacity', '0')
                     $('#tn4').css('opacity', '0')
                     $('#tn5').css('opacity', '0')
                 } else {
-                    if (scrollY > 1550 && scrollY <= 1700) {
+                    if (scrollY > 1650 && scrollY <= 1850) {
                         $('#tn4').css('opacity', '1')
                         $('#tn2').css('opacity', '0')
                         $('#tn3').css('opacity', '0')
                         $('#tn1').css('opacity', '0')
                         $('#tn5').css('opacity', '0')
                     } else {
-                        if (scrollY > 1700 && scrollY <= 2000) {
+                        if (scrollY > 1850 && scrollY <= 2400) {
                             $('#tn5').css('opacity', '1')
                             $('#tn2').css('opacity', '0')
                             $('#tn3').css('opacity', '0')
@@ -107,28 +114,28 @@ $( document ).ready(function() {
             $('#ln4').css('opacity', '0')
             $('#ln5').css('opacity', '0')
         } else {
-            if (scrollY > 1000 && scrollY <= 1150) {
+            if (scrollY > 1000 && scrollY <= 1200) {
                 $('#ln2').css('opacity', '1')
                 $('#ln1').css('opacity', '0')
                 $('#ln3').css('opacity', '0')
                 $('#ln4').css('opacity', '0')
                 $('#ln5').css('opacity', '0')
             } else {
-                if (scrollY > 1150 && scrollY <= 1300) {
+                if (scrollY > 1200 && scrollY <= 1400) {
                     $('#ln3').css('opacity', '1')
                     $('#ln2').css('opacity', '0')
                     $('#ln1').css('opacity', '0')
                     $('#ln4').css('opacity', '0')
                     $('#ln5').css('opacity', '0')
                 } else {
-                    if (scrollY > 1300 && scrollY <= 1400) {
+                    if (scrollY > 1400 && scrollY <= 1600) {
                         $('#ln4').css('opacity', '1')
                         $('#ln2').css('opacity', '0')
                         $('#ln3').css('opacity', '0')
                         $('#ln1').css('opacity', '0')
                         $('#ln5').css('opacity', '0')
                     } else {
-                        if (scrollY > 1400 && scrollY <= 1700) {
+                        if (scrollY > 1600 && scrollY <= 2000) {
                             $('#ln5').css('opacity', '1')
                             $('#ln2').css('opacity', '0')
                             $('#ln3').css('opacity', '0')
@@ -151,12 +158,12 @@ $( document ).ready(function() {
             $('#sn2').css('opacity', '0')
             $('#sn3').css('opacity', '0')
         } else {
-            if (scrollY > 2750 && scrollY <= 3000) {
+            if (scrollY > 2750 && scrollY <= 2950) {
                 $('#sn2').css('opacity', '1')
                 $('#sn1').css('opacity', '0')
                 $('#sn3').css('opacity', '0')
             } else {
-                if (scrollY > 3000 && scrollY <= 3550) {
+                if (scrollY > 2950 && scrollY <= 3750) {
                     $('#sn3').css('opacity', '1')
                     $('#sn2').css('opacity', '0')
                     $('#sn1').css('opacity', '0')
@@ -236,7 +243,9 @@ $( document ).ready(function() {
             aboutH2One: 'About',
             aboutPBlockOne: 'Defirium is an innovative modern and quite new DAO. Our aim is to make DeFi more clear and understandable for bigger amount of people and to make them work with DeFi with profit and pleasure. We provide user-fiendly interface and use the most popular protocols to make your profit bigger and safer. Our team consists of professionals in differnet spheres.',
             joinButtonOne: 'Connect wallet',
+            joinButtonThree: 'Connect wallet',
             joinH2One: 'Join DAO',
+            joinH2Two: 'My Account',
             joinCaptionOne: 'Token calculator request',
             joinCaptionTwo: 'requested amount*',
             joinCaptionThree: 'offered amount*',
@@ -336,7 +345,9 @@ $( document ).ready(function() {
             aboutH2One: 'О нас',
             aboutPBlockOne: 'Defirium - это инновационный современный и совершенно новый DAO. Наша цель - сделать DeFi более прозрачным и понятным для большего количества людей и помочь им работать с DeFi с прибылью и удовольствием. Мы предоставляем удобный и простой интерфейс и используем самые популярные протоколы, чтобы сделать вашу прибыль больше и безопаснее. В нашей команде работают профессионалы из разных сфер',
             joinButtonOne: 'Подключить кошелек',
+            joinButtonThree: 'Подключить кошелек',
             joinH2One: 'Присоединиться к DAO',
+            joinH2Two: 'Мой аккаунт',
             joinCaptionOne: 'Калькулятор запроса токенов',
             joinCaptionTwo: 'ЗАПРАШИВАЕМАЯ СУММА*',
             joinCaptionThree: 'ПРЕДЛОЖЕННАЯ СУММА*',
@@ -470,10 +481,12 @@ function setLanguage(dictionary, language)
     $('#aboutPBlockOne').text(dictionary[language].aboutPBlockOne);
     $('#joinButtonOne').text(dictionary[language].joinButtonOne);
     $('#joinH2One').text(dictionary[language].joinH2One);
+    $('#joinH2Two').text(dictionary[language].joinH2Two);
     $('#joinCaptionOne').text(dictionary[language].joinCaptionOne);
     $('#joinCaptionTwo').text(dictionary[language].joinCaptionTwo);
     $('#joinCaptionThree').text(dictionary[language].joinCaptionThree);
     $('#joinButtonTwo').text(dictionary[language].joinButtonTwo);
+    $('#joinButtonThree').text(dictionary[language].joinButtonThree);
     $("#img").attr('src',dictionary[language].img);
     $("#defiH2One").text(dictionary[language].defiH2One);
     $("#defiItemOne").text(dictionary[language].defiItemOne);
@@ -525,5 +538,203 @@ function setLanguage(dictionary, language)
     $("#strategiesItemThree").text(dictionary[language].strategiesItemThree);
     $("#strategiesItemTwo").text(dictionary[language].strategiesItemTwo);
     $("#profitH2Last").text(dictionary[language].profitH2Last);
-
 }
+
+const colors = {
+    green: {
+        default: "rgba(82, 189, 149, 0.2)",
+        half: "rgba(92, 300, 149, 0.2)",
+        quarter: "rgba(62, 300, 149, 0.2)",
+        zero: "rgba(255, 255, 255, 0)"
+    },
+    indigo: {
+        default: "rgba(80, 102, 120, 1)",
+        quarter: "rgba(80, 102, 120, 0.25)"
+    }
+};
+
+const weight = [1.171, 1.172, 1.173, 1.174, 1.189, 1.176, 1.18, 1.185, 1.195, 1.185, 1.171];
+
+const labels = [
+    "31 oct",
+    "1 nov",
+    "2 nov",
+    "3 nov",
+    "4 nov",
+    "5 nov",
+    "6 nov",
+    "7 nov",
+    "8 nov",
+    "9 nov",
+    "10 nov"
+];
+
+const ctx = document.getElementById("chart1-canvas").getContext("2d");
+ctx.canvas.height = 100;
+
+gradient = ctx.createLinearGradient(0, 25, 0, 300);
+gradient.addColorStop(0, colors.green.half);
+gradient.addColorStop(0.35, colors.green.quarter);
+gradient.addColorStop(1, colors.green.zero);
+
+const options = {
+    type: "line",
+    data: {
+        labels: labels,
+        datasets: [
+            {
+                fill: true,
+                backgroundColor: gradient,
+                pointBackgroundColor: colors.green.default,
+                borderColor: colors.green.default,
+                data: weight,
+                lineTension: 0.2,
+                borderWidth: 2,
+                pointRadius: 0
+            }
+        ]
+    },
+    options: {
+        layout: {
+            padding: 10
+        },
+        responsive: true,
+        legend: {
+            display: false
+        },
+
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        padding: 10,
+                        autoSkip: false,
+                        maxRotation: 15,
+                        minRotation: 15
+                    }
+                }
+            ],
+            yAxes: [
+                {
+                    scaleLabel: {
+                        display: true,
+                        labelString: "Price, USD",
+                        padding: 10
+                    },
+                    gridLines: {
+                        display: true,
+                        color: colors.indigo.quarter
+                    },
+                    ticks: {
+                        beginAtZero: false,
+                        max: 1.2,
+                        min: 1.17,
+                        padding: 0
+                    }
+                }
+            ]
+        }
+    }
+};
+
+//chart 2
+
+const weight2 = [1.171, 1.172, 1.173, 1.174, 1.189, 1.176, ];
+
+const labels2 = [
+    "31 oct",
+    "1 nov",
+    "2 nov",
+    "3 nov",
+    "4 nov",
+    "5 nov"
+];
+
+const ctx2 = document.getElementById("chart2-canvas").getContext("2d");
+ctx2.canvas.height = 120;
+
+gradient = ctx2.createLinearGradient(0, 25, 0, 300);
+gradient.addColorStop(0, colors.green.half);
+gradient.addColorStop(0.35, colors.green.quarter);
+gradient.addColorStop(1, colors.green.zero);
+
+const options2 = {
+    type: "line",
+    data: {
+        labels: labels2,
+        datasets: [
+            {
+                fill: true,
+                backgroundColor: gradient,
+                pointBackgroundColor: colors.green.default,
+                borderColor: colors.green.default,
+                data: weight2,
+                lineTension: 0.2,
+                borderWidth: 2,
+                pointRadius: 0
+            }
+        ]
+    },
+    options: {
+        layout: {
+            padding: 10
+        },
+        responsive: true,
+        legend: {
+            display: false
+        },
+
+        tooltips: {
+            titleFontSize: 14,
+            borderWidth: 1,
+            borderColor: "green",
+            backgroundColor: 'white',
+            titleFontColor: 'black'
+        },
+
+        scales: {
+            xAxes: [
+                {
+                    gridLines: {
+                        display: false
+                    },
+                    ticks: {
+                        padding: 10,
+                        autoSkip: false,
+                        maxRotation: 5,
+                        minRotation: 5
+                    }
+                }
+            ],
+            yAxes: [
+                {
+                    scaleLabel: {
+                        display: true,
+                        labelString: "Price, USD",
+                        padding: 10
+                    },
+                    gridLines: {
+                        display: true,
+                        color: colors.indigo.quarter
+                    },
+                    ticks: {
+                        beginAtZero: false,
+                        max: 1.2,
+                        min: 1.17,
+                        padding: 0
+                    }
+                }
+            ]
+        }
+    }
+};
+
+
+window.onload = function () {
+    window.myLine = new Chart(ctx, options);
+    window.myLine = new Chart(ctx2, options2);
+};
+

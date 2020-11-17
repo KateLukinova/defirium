@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Join Dao</title>
+    <title>My Account</title>
   </head>
 <body>
 
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="my-account.html">
+                <a href="my-account.html" class="active">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M25.6066 18.2125C23.9452 16.551 21.9622 15.3281 19.7985 14.6C21.7939 13.1252 23.0904 10.7565 23.0904 8.09045C23.0905 3.62936 19.4612 0 15 0C10.5388 0 6.90949 3.62936 6.90949 8.09045C6.90949 10.7566 8.20605 13.1253 10.2015 14.6C8.03771 15.328 6.0549 16.551 4.39336 18.2125C1.56029 21.0456 0 24.8125 0 28.8191C0 29.4713 0.528691 30 1.1809 30H28.819C29.4713 30 29.9999 29.4713 29.9999 28.8191C30 24.8125 28.4397 21.0456 25.6066 18.2125ZM9.27141 8.09045C9.27141 4.93166 11.8412 2.36186 15.0001 2.36186C18.1589 2.36186 20.7287 4.93166 20.7287 8.09045C20.7287 11.2492 18.1589 13.819 15.0001 13.819C11.8412 13.8191 9.27141 11.2492 9.27141 8.09045ZM2.41658 27.6381C3.01389 21.221 8.42947 16.1809 15 16.1809C21.5705 16.1809 26.9861 21.221 27.5834 27.6381H2.41658Z"/>
                     </svg>
@@ -73,33 +73,13 @@
 
     <div class="page-content-wrapper">
         <div class="page-header">
-            <h2 id="joinH2One">Join DAO</h2>
+            <h2 id="joinH2Two">My Account</h2>
             <a href="#" class="m-btn" id="joinButtonOne">connect wallet</a>
         </div>
-        <form action="#" class="join-form">
-            <div class="form-header" id="joinCaptionOne">Token calculator request</div>
-            <div class="form-group">
-                <label for="r-amount" id="joinCaptionTwo">Requested Amount *</label>
-                <div class="join-input-box">
-                    <input type="text" id="r-amount" class="join-input">
-                    <select name="r-amount-select" id="r-amount-select" class="join-select">
-                        <option value="TBCCDAO" data-image="img/select-tbcc.svg">TBCC DAO</option>
-                        <option value="USDT" data-image="img/us.svg">USDT</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="a-amount" id="joinCaptionThree">Offered Amount *</label>
-                <div class="join-input-box">
-                    <input type="text" id="a-amount" class="join-input">
-                    <select name="a-amount-select" id="a-amount-select" class="join-select">
-                        <option value="TBCCDAO" data-image="img/select-tbcc.svg">TBCC DAO</option>
-                        <option value="USDT" data-image="img/us.svg">USDT</option>
-                    </select>
-                </div>
-            </div>
-            <button class="m-btn" id="joinButtonTwo">Create request</button>
-        </form>
+        <div class="account-page">
+            <img src="img/acc-icon.svg" alt="">
+            <a href="#" class="m-btn" id="joinButtonThree">connect wallet</a>
+        </div>
     </div>
 
 </div>
